@@ -1,0 +1,39 @@
+[
+    {
+      "name": "wedding",
+      "image": "https://example.com/wedding.jpg",
+      "price": "$2500",
+      "short_description": "full-service wedding planning"
+    },
+    {
+      "name": "birthday",
+      "image": "https://example.com/birthday.jpg",
+      "price": "$500",
+      "short_description": "birthday party planning"
+    },
+    {
+      "name": "anniversary",
+      "image": "https://example.com/anniversary.jpg",
+      "price": "$800",
+      "short_description": "anniversary celebration coordination"
+    },
+    {
+      "name": "engagement",
+      "image": "https://example.com/engagement.jpg",
+      "price": "$750",
+      "short_description": "engagement event design"
+    },
+    {
+      "name": "babyshower",
+      "image": "https://example.com/babyshower.jpg",
+      "price": "$400",
+      "short_description": "baby shower planning services"
+    },
+    {
+      "name": "retirement",
+      "image": "https://example.com/retirement.jpg",
+      "price": "$600",
+      "short_description": "retirement party coordination"
+    }
+  ]
+  
