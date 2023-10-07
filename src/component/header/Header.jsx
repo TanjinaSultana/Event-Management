@@ -1,22 +1,21 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Banner from "../banner/Banner";
 const Header = () => {
-    const link = < div className="text-xl  ">
-    <li  className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "bg-red-700" : "bg-none"
-  }>
-          <Link to="/">Home</Link>
-        </li>
-        <li >
-          <Link to="/about">About</Link>
-        </li>
-        <li >
-          <Link to="/services">Services</Link>
-        </li>
-    </div>
+  const link =  <div className="">
+  <NavLink to='/' className = {({ isActive, isPending }) =>
+isPending ? "pending" : isActive ? "bg-[#ff3e49]  font-normal text-xl p-4 rounded-lg mr-8" : "font-normal text-xl mr-4"
+}>Home</NavLink>
+ <NavLink to='/about' className={({ isActive, isPending }) =>
+isPending ? "pending" : isActive ? "bg-[#ff3e49]  font-normal text-xl p-4 rounded-lg mr-8" : "font-normal text-xl mr-4"
+}>About</NavLink>
+ <NavLink to="/services"className={({ isActive, isPending }) =>
+isPending ? "pending" : isActive ? "bg-[#ff3e49]  font-normal text-xl p-4 rounded-lg mr-8" : "font-normal text-xl mr-4"
+}>Services</NavLink>
+
+ </div>
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 mt-4 mb-5">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -32,10 +31,10 @@ const Header = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 ">
-        <li className="flex">
+       
 
      {link}
-        </li>
+        
     </ul>
   </div>
   <div className="navbar-end">

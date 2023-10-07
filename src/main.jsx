@@ -9,7 +9,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Service from './component/service/Service';
+import ServicePage from './component/servicePage/ServicePage';
 
 const router = createBrowserRouter([
   {
@@ -26,8 +26,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/services",
-        element: <Service></Service>,
+        element: <ServicePage></ServicePage>,
       }
+     
     ]
   },
 ]);

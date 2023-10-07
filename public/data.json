@@ -1,38 +1,43 @@
 [
     {
-      "name": "wedding",
-      "image": "https://example.com/wedding.jpg",
-      "price": "$2500",
+       "id":1,
+      "name": "Weddings",
+      "image": "https://i.ibb.co/VTGjfz5/wedding.webp",
+      "price": 2500,
       "short_description": "full-service wedding planning"
     },
-    {
-      "name": "birthday",
-      "image": "https://example.com/birthday.jpg",
-      "price": "$500",
+    {  "id":2,
+      "name": "Birthday Parties",
+      "image": "https://i.ibb.co/PcphFyz/birthday.webp",
+      "price": 5000,
       "short_description": "birthday party planning"
     },
     {
-      "name": "anniversary",
-      "image": "https://example.com/anniversary.jpg",
-      "price": "$800",
+      "id":3,
+      "name": "Anniversaries",
+      "image": "https://i.ibb.co/cQmMvcM/anniversary.webp",
+      "price": 8000,
       "short_description": "anniversary celebration coordination"
     },
     {
-      "name": "engagement",
-      "image": "https://example.com/engagement.jpg",
-      "price": "$750",
+      "id":4,
+      "name": "Engagement Parties",
+      "image": "https://i.ibb.co/WkdV4jG/engagement.webp",
+      "price": 7500,
       "short_description": "engagement event design"
     },
     {
-      "name": "babyshower",
-      "image": "https://example.com/babyshower.jpg",
-      "price": "$400",
+      "id":5,
+      "name": "Babyshower",
+      "image": "https://i.ibb.co/zsZLJHm/baby.webp",
+      "price": 4000,
       "short_description": "baby shower planning services"
     },
     {
-      "name": "retirement",
-      "image": "https://example.com/retirement.jpg",
-      "price": "$600",
+      "id":6,
+      "name": "Retirement Parties",
+      "image": "https://i.ibb.co/6nP9fGy/retirement.webp",
+      "price": 6000,
       "short_description": "retirement party coordination"
     }
   ]
