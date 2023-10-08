@@ -10,7 +10,7 @@ if(!data){
 
   const {id,name,price,image,short_description} = data;
 
-
+ 
     return (
         <div>
            
@@ -23,7 +23,7 @@ if(!data){
     <p>${price}</p>
     <p>{short_description}</p>
     <div className="card-actions">
-      <NavLink to={`/datas/${id}`} className="btn bg-[#FE612C] text-white">View Details</NavLink>
+      <NavLink to={`/datas/${id}`} className="btn bg-[#FE612C] text-white" >View Details</NavLink>
     </div>
   </div>
 </div> 

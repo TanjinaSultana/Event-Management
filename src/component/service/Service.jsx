@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-key */
 import { useEffect, useState } from "react";
 import CardService from "../card-service/CardService";
+import Banner from "../banner/Banner";
 
 
 
@@ -17,7 +19,12 @@ const Service = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
         {
-            dataSet?.map(data=><CardService key={data.id} data={data}></CardService> )
+            dataSet?.map(data=>(
+
+                <CardService key={data.id} data={data}></CardService>
+                
+            
+            ) )
         }
         </div>
         </div>

@@ -14,10 +14,14 @@ import {
 import ServicePage from './component/servicePage/ServicePage';
 import Details from './component/details/Details';
 import AuthProvider from './component/firebase/AuthProvider';
+import PrivateRoute from './component/firebase/PrivateRoute';
+import ErrorPage from './component/errorPage/ErrorPage';
+import BookNow from './component/bookNow/BookNow';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path: "/",
@@ -25,12 +29,16 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About></About>,
+        element: <PrivateRoute>
+
+          <About></About>
+        </PrivateRoute>
+        ,
       },
       {
         path: "/services",
-        element: <ServicePage></ServicePage>,
-      },
+        element:<ServicePage></ServicePage>,
+        },
       {
         path: "/login",
         element: <Login></Login>,
@@ -40,8 +48,17 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
+        path: "/booked",
+        element: <PrivateRoute>
+          <BookNow></BookNow>
+        </PrivateRoute>,
+      },
+      {
         path: "/datas/:id",
-    element: <Details></Details>,
+    element: <PrivateRoute>
+
+      <Details></Details>
+    </PrivateRoute>,
     loader: ()=>fetch('/data.json')
       }
      

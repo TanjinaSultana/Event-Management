@@ -1,6 +1,13 @@
 import { NavLink } from "react-router-dom";
 import Banner from "../banner/Banner";
+import { useContext } from "react";
+import { AuthContext } from "../firebase/AuthProvider";
 const Header = () => {
+  const {user,logout} = useContext(AuthContext);
+  const handleLogOut = () =>{
+    logout().then()
+  }
+  console.log(user); 
   const link =  <div className="">
   <NavLink to='/' className = {({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "bg-[#ff3e49]  font-normal text-xl p-4 rounded-lg mr-8" : "font-normal text-xl mr-4"
@@ -41,7 +48,13 @@ isPending ? "pending" : isActive ? "bg-[#ff3e49]  font-normal text-xl p-4 rounde
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+   <div>
+    <p className="w-[50px] h-[50px] rounded-full mr-10">{user?.photoURL}</p>
+    <h4>{user?.displayName}</h4>
+   </div>
+   {
+     user&&<a className="btn" onClick={handleLogOut}>Logout</a>
+   }
   </div>
 </div>
 
