@@ -10,7 +10,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ServicePage from './component/servicePage/ServicePage';
-
+import Details from './component/details/Details';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +27,11 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <ServicePage></ServicePage>,
+      },
+      {
+        path: "/datas/:id",
+    element: <Details></Details>,
+    loader: ()=>fetch('/data.json')
       }
      
     ]

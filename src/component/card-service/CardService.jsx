@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 
 
-
+import { NavLink } from "react-router-dom";
 
 const CardService = ({data}) => {
 if(!data){
   return null;
 }
 
-  const {name,price,image,short_description} = data;
+  const {id,name,price,image,short_description} = data;
 
 
     return (
@@ -23,7 +23,7 @@ if(!data){
     <p>${price}</p>
     <p>{short_description}</p>
     <div className="card-actions">
-      <button className="btn bg-[#FE612C] text-white">View Details</button>
+      <NavLink to={`/datas/${id}`} className="btn bg-[#FE612C] text-white">View Details</NavLink>
     </div>
   </div>
 </div> 

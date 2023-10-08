@@ -3,15 +3,12 @@
 
 const PlanningService = () => {
     return (
-        <div className="bg-base-200 mt-24 h-[400px]">
-
-        <div className="">
-           
-
-            <h1 className="text-5xl text-center mb-8 mt-24"><span className="text-[#FFA500] ">Hi There!</span>From The Best Event Planner Agency.</h1>
-           
-            <p className="text-gray-500 text-center font-bold ">We craft every detail with utmost care,<br></br> ensuring your special day is a reflection of your unique love story.<br></br> Join us for an unforgettable celebration where dreams become reality</p>
-            <div className='grid grid-cols-4 mx-auto w-5/6 mt-14'>
+        <div className="hero min-h-screen bg-base-200 mt-24">
+  <div className="hero-content text-center">
+    <div className="">
+    <h1 className="text-5xl text-center mb-8 mt-24"><span className="text-[#FFA500] ">Hi There!</span>From The Best Event Planner Agency.</h1>
+    <p className="text-gray-500 text-center font-bold py-6">We craft every detail with utmost care,<br></br> ensuring your special day is a reflection of your unique love story.<br></br> Join us for an unforgettable celebration where dreams become reality</p>
+    <div className='grid grid-cols-4  mt-14'>
                 <div>
 
                 {/* //<FaHome></FaHome> */}
@@ -33,8 +30,10 @@ const PlanningService = () => {
 
 
             </div>
-        </div>
-        </div>
+    </div>
+  </div>
+</div>
+       
     );
 };
 
