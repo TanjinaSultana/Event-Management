@@ -8,9 +8,12 @@ isPending ? "pending" : isActive ? "bg-[#ff3e49]  font-normal text-xl p-4 rounde
  <NavLink to='/about' className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "bg-[#ff3e49]  font-normal text-xl p-4 rounded-lg mr-8" : "font-normal text-xl mr-4"
 }>About</NavLink>
- <NavLink to="/services"className={({ isActive, isPending }) =>
+ <NavLink to="/login"className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "bg-[#ff3e49]  font-normal text-xl p-4 rounded-lg mr-8" : "font-normal text-xl mr-4"
-}>Services</NavLink>
+}>Login</NavLink>
+ <NavLink to="/register"className={({ isActive, isPending }) =>
+isPending ? "pending" : isActive ? "bg-[#ff3e49]  font-normal text-xl p-4 rounded-lg mr-8" : "font-normal text-xl mr-4"
+}>Register</NavLink>
 
  </div>
     return (
