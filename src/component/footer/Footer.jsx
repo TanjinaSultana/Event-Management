@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 bg-base-200 text-base-content mt-14">
+            <footer className="footer p-10 bg-stone-700 text-white mt-14">
   <aside className="mt-10">
   <a className=" normal-case text-5xl "><span className="text-[#ff3e49] ">E</span>vent <span className="text-xl">Planner</span></a>
   </aside> 

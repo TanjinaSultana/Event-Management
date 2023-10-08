@@ -23,7 +23,7 @@ if(!data){
     <p>${price}</p>
     <p>{short_description}</p>
     <div className="card-actions">
-      <button className="btn bg-[#FE612C] text-white">Book Now</button>
+      <button className="btn bg-[#FE612C] text-white">View Details</button>
     </div>
   </div>
 </div> 
