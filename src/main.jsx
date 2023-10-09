@@ -17,6 +17,7 @@ import AuthProvider from './component/firebase/AuthProvider';
 import PrivateRoute from './component/firebase/PrivateRoute';
 import ErrorPage from './component/errorPage/ErrorPage';
 import BookNow from './component/bookNow/BookNow';
+import Venue from './component/venue/Venue';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/venue",
+        element: <></>,
       },
       {
         path: "/booked",

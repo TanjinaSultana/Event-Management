@@ -52,7 +52,7 @@ const Register = () => {
 <div className="hero-content flex-col lg:flex-row-reverse">
   <div className="text-center lg:text-left">
     <h1 className="text-5xl font-bold">Register now!</h1>
-    <p className="py-6">To Decorate Your Events With Us</p>
+    <p className="py-6 font-normal">To Decorate Your Events With Us</p>
   </div>
   <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
     <form  className="card-body">

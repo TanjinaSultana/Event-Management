@@ -1,5 +1,5 @@
 
-
+import { Link } from "react-router-dom";
 
 const PlanningService = () => {
     return (
@@ -13,19 +13,19 @@ const PlanningService = () => {
 
                 {/* //<FaHome></FaHome> */}
                 <img src='https://i.ibb.co/47PKZnL/home2.png' className='bg-[#ff3e49] w-[50px] h-[50px] ml-10 lg:ml-24'></img>
-                <h4 className="mt-8 text-gray-500  font-bold ">Find the perfect venue for free</h4>
+                <Link to="/about" className=" mt-8 text-gray-500  font-bold ">Venue Selection</Link>
                 </div>
                 <div >
         <img src='https://i.ibb.co/YQsrCtP/message.png' className="w-[50px] h-[50px] ml-10 lg:ml-24"></img>
-        <h4 className="mt-8 text-gray-500  font-bold">Connect with the best vendor</h4>
+        <Link to="/booked" className="mt-8  text-gray-500  font-bold">Connect with vendor</Link>
                 </div>
                 <div >
 <img src='https://i.ibb.co/R3rXXg1/edit.png' className="w-[50px] h-[50px] ml-10 lg:ml-24"></img>
-<h4 className="mt-8 text-gray-500 font-bold">Let us help you with the event</h4>
+<Link to="/about" className="  mt-8  text-gray-500 font-bold">Let us help you with event</Link>
                 </div>
                 <div >
 <img src='https://i.ibb.co/gFC42f8/party.png' className="w-[50px] h-[50px] ml-10 lg:ml-24"></img>
-<h4 className="mt-8 text-gray-500 font-bold">Enjoy the party with your friends</h4>
+<Link to="/booked" className="  mt-8  text-gray-500 font-bold">Enjoy the party with us</Link>
                 </div>
 
 

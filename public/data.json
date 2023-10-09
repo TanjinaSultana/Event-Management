@@ -5,14 +5,14 @@
       "desc":"A wedding event planner is your dedicated partner in turning your dream wedding into a reality. From the moment you say 'yes' to the final 'I do,' they take care of every detail, leaving you free to savor every moment.",
       "image": "https://i.ibb.co/VTGjfz5/wedding.webp",
       "price": 2500,
-      "short_description": "full-service wedding planning"
+      "short_description": "Full-service wedding planning"
     },
     {  "id":2,
       "name": "Birthday Parties",
       "desc":"A birthday event planner is your trusted partner in turning your special day into an unforgettable celebration. With a keen eye for detail and a creative touch, they take your ideas and transform them into a meticulously planned and beautifully executed birthday bash. ",
       "image": "https://i.ibb.co/PcphFyz/birthday.webp",
       "price": 5000,
-      "short_description": "birthday party planning"
+      "short_description": "Birthday party planning"
     },
     {
       "id":3,
@@ -20,7 +20,7 @@
       "desc":"At Anniversaries Event Planner, we specialize in turning your cherished milestones into unforgettable celebrations. Whether it's a wedding anniversary, a corporate milestone, or any other special occasion, we are your dedicated partners in creating magical moments",
       "image": "https://i.ibb.co/cQmMvcM/anniversary.webp",
       "price": 8000,
-      "short_description": "anniversary celebration coordination"
+      "short_description": "Anniversary celebration coordination"
     },
     {
       "id":4,
@@ -28,7 +28,7 @@
       "desc":"Meet our dedicated engagement event planner, the architect of unforgettable moments and the curator of love stories. With a keen eye for detail and a passion for creating romantic experiences, our engagement event planner specializes in crafting perfect proposals and engagement celebrations.",
       "image": "https://i.ibb.co/WkdV4jG/engagement.webp",
       "price": 7500,
-      "short_description": "engagement event design"
+      "short_description": "Engagement event design"
     },
     {
       "id":5,
@@ -36,7 +36,7 @@
       "desc":"Discover the joy of expecting with our Baby Shower Event Planner services. We specialize in creating heartwarming and memorable baby shower celebrations that radiate love and anticipation. ",
       "image": "https://i.ibb.co/zsZLJHm/baby.webp",
       "price": 4000,
-      "short_description": "baby shower planning services"
+      "short_description": "Baby shower planning services"
     },
     {
       "id":6,
@@ -44,7 +44,7 @@
       "desc":" Expertise ensures that retirees, their colleagues, and loved ones can bid farewell to the working world in style, surrounded by heartfelt moments and cherished memories.",
       "image": "https://i.ibb.co/6nP9fGy/retirement.webp",
       "price": 6000,
-      "short_description": "retirement party coordination"
+      "short_description": "Retirement party coordination"
     }
   ]
   
