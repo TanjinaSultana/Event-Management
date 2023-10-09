@@ -1,7 +1,12 @@
 import toast from "react-hot-toast";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import the CSS for AOS
+import { useEffect } from 'react';
 
 const BookNow = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
     const handleSubmit  = (e) =>{
         e.preventDefault()
   toast.success("Submitted");
@@ -15,7 +20,7 @@ const BookNow = () => {
       <h1 className="text-5xl font-bold">Booking now!</h1>
       <p className="py-6">Give Details for Booking</p>
     </div>
-    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="1000">
       <form  className="card-body">
         <div className="form-control">
           <label className="label">

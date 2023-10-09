@@ -25,7 +25,6 @@ if((email && password)){
 
     signIn(email,password)
     .then(result => {
-
       toast.success("login success")
       navigate('/');
     }

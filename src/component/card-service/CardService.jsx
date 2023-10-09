@@ -1,9 +1,14 @@
 /* eslint-disable react/prop-types */
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import the CSS for AOS
+import { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 
 const CardService = ({data}) => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
 if(!data){
   return null;
 }
@@ -14,7 +19,7 @@ if(!data){
     return (
         <div>
            
-             <div className="card w-96 bg-base-100 shadow-xl">
+             <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="1000">
   <figure className="px-10 pt-10">
     <img src={image} className="rounded-xl w-full" />
   </figure>

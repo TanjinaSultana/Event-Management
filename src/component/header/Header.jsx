@@ -2,7 +2,13 @@ import { NavLink,Link } from "react-router-dom";
 
 import { useContext } from "react";
 import { AuthContext } from "../firebase/AuthProvider";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import the CSS for AOS
+import { useEffect } from 'react';
 const Header = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
   const {user,logout} = useContext(AuthContext);
   const handleLogOut = () =>{
     logout().then()
@@ -53,7 +59,7 @@ isPending ? "pending" : isActive ? "bg-[#ff3e49]  font-normal text-xl p-2 w-2/3 
     <a className=" normal-case text-5xl "><span className="text-[#ff3e49] ">E</span>vent <span className="text-xl">Planner</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 ">
+    <ul className="menu menu-horizontal px-1 " data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
        
 
      {link}

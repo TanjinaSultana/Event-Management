@@ -6,8 +6,8 @@ import { useEffect } from 'react';
 
 const Review = () => {
     useEffect(() => {
-      AOS.init(); // Initialize AOS
-    }, []);
+        AOS.init(); // Initialize AOS
+      }, []);
     return (
         <div >
             <div className="hero min-h-screen bg-base-200 mt-36" >
