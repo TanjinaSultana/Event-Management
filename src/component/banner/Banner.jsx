@@ -11,7 +11,7 @@ const Banner = () => {
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold ">Your <span className="text-[#FFA500]">Dream Event</span>, Our Expertise</h1>
       <p className="mb-5">Turning Dreams into Reality By Taking Our Service.We works with customer satisfaction.</p>
-      <NavLink to="/about" className="btn btn-primary bg-[#FE612C] border-none">Explore More</NavLink>
+      <NavLink to="/about" className="btn  bg-[#FE612C] border-none">Explore More</NavLink>
     </div>
   </div>
 </div>

@@ -8,7 +8,8 @@ const ServicePage = ({viewData}) => {
    const {name,id,image,price,short_description,desc}  = viewData 
   return (
         <div>
-          <div className="hero w-[800px] bg-base-200">
+
+          <div className="hero w-5/6 bg-base-200">
   <div className="hero-content flex-col lg:flex-row">
     <img src={image}className="max-w-sm rounded-lg shadow-2xl" />
     <div>

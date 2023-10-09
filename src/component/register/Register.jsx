@@ -3,6 +3,8 @@ import React, { useContext, useState } from 'react';
 import { AuthContext } from '../firebase/AuthProvider';
 import SocialLogin from '../social/SocialLogin';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 
 
@@ -30,12 +32,12 @@ const Register = () => {
                .then(result => {
                 handleUpdateProfile(name,img)
                 .then(() => {
-                  alert("user created");
+                  toast.success("user created");
                   navigate('/')
                 })
                })
                .catch(err => {
-                alert(err.message)
+                toast.error(err.message)
                })
            }
           } else {
@@ -82,14 +84,17 @@ setImg(e.target.value)} type="text" placeholder="Image" className="input input-b
           >Password</span>
         </label>
         <input onChange={(e)=> setPassword(e.target.value) } type="password" placeholder="password" className="input input-bordered" required  name='password'/>
-        <p>{error}</p>
         <label className="label">
-          <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+        <p className='text-red-500 mt-2'>{error}</p>
+      
         </label>
       </div>
       <div className="form-control mt-6">
-        <button  onClick={handleRegister} className="btn btn-primary" type='submit'>Register</button>
-    
+        <button  onClick={handleRegister} className="btn  bg-[#FE612C] border-none" type='submit'>Register</button>
+        <label className="label">
+            Already logged in?
+            <Link to="/login" className="label-text-alt link link-hover underline text-xl">Login</Link>
+          </label>
   </div>
     </form>
       

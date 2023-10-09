@@ -2,14 +2,16 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../firebase/AuthProvider';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../social/SocialLogin';
+import toast from 'react-hot-toast';
 
 const Login = () => {
     const {googleSignIn,signIn,user} = useContext(AuthContext);
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
     const [error,setError] = useState("");
+    const navigate =useNavigate();
     // const handleGoogle =()=>{
     //     googleSignIn().then(result=>{
     //         console.log(result.user);
@@ -17,17 +19,21 @@ const Login = () => {
     // }
     const handleLogin =(e)=>{
         e.preventDefault()
+        setError("");
 if((email && password)){
-  if(email == user?.email){
+ 
 
     signIn(email,password)
-    .then(result => console.log(result.user) )
-    .catch(err => setError(err.message))
-  }else{
-   console.log(email);
-   console.log(user?.email);
-  }
+    .then(result => {
+
+      toast.success("login success")
+      navigate('/');
+    }
+      )
+      .catch(err => setError(err.message))
+ 
 }
+
     }
     return (
         <div>
@@ -52,12 +58,12 @@ setEmail(e.target.value)} type="email" placeholder="email" className="input inpu
           </label>
           <input onChange={(e)=> setPassword(e.target.value) } type="password" placeholder="password" className="input input-bordered" required />
         </div>
-          <p>{error}</p>
+          <p className='text-red-500 mt-2'>{error}</p>
         <div className="form-control mt-6">
-          <button className="btn btn-primary" onClick={handleLogin}>Login</button>
+          <button className="btn bg-[#FE612C]" onClick={handleLogin}>Login</button>
           <label className="label">
             New Here?
-            <Link to="/register" className="label-text-alt link link-hover">Create an account</Link>
+            <Link to="/register" className="label-text-alt link link-hover text-xl">Register</Link>
           </label>
           {/* <button onClick={handleGoogle} className="btn btn-primary">Google</button> */}
           <SocialLogin></SocialLogin>

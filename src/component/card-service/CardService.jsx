@@ -19,9 +19,9 @@ if(!data){
     <img src={image} className="rounded-xl w-full" />
   </figure>
   <div className="card-body items-center text-center">
-    <h2 className="card-title">{name}</h2>
-    <p>${price}</p>
-    <p>{short_description}</p>
+    <h2 className="card-title font-bold text-2xl">{name}</h2>
+    <p className="font-normal text-xl">${price}</p>
+    <p className="font-normal text-xl">{short_description}</p>
     <div className="card-actions">
       <NavLink to={`/datas/${id}`} className="btn bg-[#FE612C] text-white" >View Details</NavLink>
     </div>
