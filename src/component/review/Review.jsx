@@ -1,17 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import the CSS for AOS
+import { useEffect } from 'react';
 
 
 const Review = () => {
+    useEffect(() => {
+      AOS.init(); // Initialize AOS
+    }, []);
     return (
-        <div>
-            <div className="hero min-h-screen bg-base-200 mt-36">
+        <div >
+            <div className="hero min-h-screen bg-base-200 mt-36" >
   <div className="hero-content text-center">
     <div className="">
       <h1 className="text-5xl font-bold"><span className="text-[#FE612C]">C</span>lient Review</h1>
       <p className="py-6 font-semibold text-gray-500">Provides a Best Services.Happy Client Reviews.</p>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
 
-      <div className="card w-96 bg-base-100 shadow-xl ">
+      <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
   <div className="card-body">
         <blockquote>
     <h2 className="card-title">
@@ -26,7 +32,7 @@ const Review = () => {
   </div>
   
 </div>
-      <div className="card w-96 bg-base-100 shadow-xl ">
+      <div className="card w-96 bg-base-100 shadow-xl " data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="2000">
   <div className="card-body">
         <blockquote>
     <h2 className="card-title">
@@ -42,7 +48,7 @@ const Review = () => {
   </div>
  
 </div>
-      <div className="card w-96 bg-base-100 shadow-xl ">
+      <div className="card w-96 bg-base-100 shadow-xl " data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
   <div className="card-body">
         <blockquote>
     <h2 className="card-title">
