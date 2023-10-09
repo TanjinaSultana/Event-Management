@@ -28,7 +28,7 @@ Follow these steps to set project up and running:
 6. install tailwind : `npm install -D tailwindcss postcss autoprefixer npx tailwindcss init -p`
 6. install daisyui : `npm i -D daisyui@latest`
 7. install toastify : `$ npm install react-hot-toats`
-8.live link : 
+8. live link : `https://event-management-bca10.web.app/`
 
 ## Usage
 To use this donation-camp application:
